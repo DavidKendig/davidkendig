@@ -1,5 +1,8 @@
 <p align="center">
-  <img src="./assets/header.svg" alt="David Kendig — Build it simple. Ship it fast. Keep it yours." width="900" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/header-dark.svg" />
+    <img src="./assets/header-light.svg" alt="David Kendig — Build it simple. Ship it fast. Keep it yours." width="900" />
+  </picture>
 </p>
 
 <p align="center">

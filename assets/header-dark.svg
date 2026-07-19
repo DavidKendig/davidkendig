@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 370" width="900" height="370" role="img" aria-label="David Kendig — Build it simple. Ship it fast. Keep it yours.">
+  <defs>
+    <!-- vertical ramp, like wax lit from below -->
+    <linearGradient id="blobGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0A66C2" />
+      <stop offset="55%" stop-color="#1E88E5" />
+      <stop offset="100%" stop-color="#00C2A8" />
+    </linearGradient>
+    <linearGradient id="blobGradSoft" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7C4DFF" />
+      <stop offset="100%" stop-color="#0A66C2" />
+    </linearGradient>
+
+    <!-- glow spilling out of the lamp -->
+    <filter id="soften" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="18" />
+    </filter>
+
+    <!-- gooey filter: blur, then crush the alpha ramp so nearby bodies
+         fuse into one surface and stretch into a neck before they part -->
+    <filter id="goo" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="15" result="blur" />
+      <feColorMatrix in="blur" type="matrix"
+        values="1 0 0 0 0
+                0 1 0 0 0
+                0 0 1 0 0
+                0 0 0 24 -11" />
+    </filter>
+  </defs>
+
+  <!-- ambient glow, breathing on its own slow cycle -->
+  <g filter="url(#soften)" opacity="0.32">
+    <ellipse cx="445" cy="190" rx="86" ry="140" fill="url(#blobGradSoft)">
+      <animate attributeName="ry" dur="19s" repeatCount="indefinite" calcMode="spline"
+        keyTimes="0;0.5;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" values="140;156;140" />
+      <animate attributeName="rx" dur="25s" repeatCount="indefinite" calcMode="spline"
+        keyTimes="0;0.5;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" values="86;74;86" />
+    </ellipse>
+  </g>
+
+  <!-- the lamp: separate wax bodies that the goo filter fuses and pinches apart -->
+  <g filter="url(#goo)" fill="url(#blobGrad)" opacity="0.94">
+
+    <!-- wax pool at the base, kneading slowly -->
+    <ellipse cx="445" cy="298" rx="62" ry="44">
+      <animate attributeName="ry" dur="16s" repeatCount="indefinite" calcMode="spline"
+        keyTimes="0;0.5;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" values="44;34;44" />
+      <animate attributeName="rx" dur="16s" repeatCount="indefinite" calcMode="spline"
+        keyTimes="0;0.5;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" values="62;70;62" />
+    </ellipse>
+
+    <!-- cap of wax collected at the top -->
+    <ellipse cx="445" cy="82" rx="48" ry="34">
+      <animate attributeName="ry" dur="21s" repeatCount="indefinite" calcMode="spline"
+        keyTimes="0;0.5;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" values="34;26;34" />
+      <animate attributeName="rx" dur="21s" repeatCount="indefinite" calcMode="spline"
+        keyTimes="0;0.5;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" values="48;56;48" />
+    </ellipse>
+
+    <!-- big globule: lifts off the pool, stretches thin, rides up, sinks back -->
+    <circle cx="445" cy="270" r="34">
+      <animate attributeName="cy" dur="24s" repeatCount="indefinite" calcMode="spline"
+        keyTimes="0;0.08;0.5;0.58;1"
+        keySplines="0.7 0 0.9 0.4;0.25 0 0.4 1;0.7 0 0.9 0.4;0.25 0 0.4 1"
+        values="272;258;104;96;272" />
+      <animate attributeName="r" dur="24s" repeatCount="indefinite" calcMode="spline"
+        keyTimes="0;0.25;0.5;0.75;1"
+        keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1"
+        values="34;26;31;25;34" />
+      <animate attributeName="cx" dur="24s" repeatCount="indefinite" calcMode="spline"
+        keyTimes="0;0.25;0.5;0.75;1"
+        keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1"
+        values="445;460;441;428;445" />
+    </circle>
+
+    <!-- second globule, counter-phase so something is always travelling -->
+    <circle cx="440" cy="110" r="26">
+      <animate attributeName="cy" dur="31s" repeatCount="indefinite" calcMode="spline"
+        keyTimes="0;0.1;0.5;0.6;1"
+        keySplines="0.7 0 0.9 0.4;0.25 0 0.4 1;0.7 0 0.9 0.4;0.25 0 0.4 1"
+        values="110;126;276;286;110" />
+      <animate attributeName="r" dur="31s" repeatCount="indefinite" calcMode="spline"
+        keyTimes="0;0.3;0.7;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1"
+        values="26;20;29;26" />
+      <animate attributeName="cx" dur="31s" repeatCount="indefinite" calcMode="spline"
+        keyTimes="0;0.3;0.65;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1"
+        values="440;424;464;440" />
+    </circle>
+
+    <!-- small bead, quicker, keeps the middle of the lamp alive -->
+    <circle cx="462" cy="230" r="15">
+      <animate attributeName="cy" dur="18s" repeatCount="indefinite" calcMode="spline"
+        keyTimes="0;0.5;1" keySplines="0.65 0 0.35 1;0.65 0 0.35 1" values="248;138;248" />
+      <animate attributeName="cx" dur="18s" repeatCount="indefinite" calcMode="spline"
+        keyTimes="0;0.5;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" values="462;426;462" />
+      <animate attributeName="r" dur="18s" repeatCount="indefinite" calcMode="spline"
+        keyTimes="0;0.5;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" values="15;10;15" />
+    </circle>
+  </g>
+
+  <!-- name + tagline: static so text never wobbles -->
+  <g text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+    <text x="450" y="220" font-size="92" font-weight="700" fill="#ffffff">David Kendig</text>
+    <text x="450" y="268" font-size="20" font-weight="500" fill="#ffffff" opacity="0.85">Build it simple. Ship it fast. Keep it yours.</text>
+  </g>
+</svg>
