@@ -7,12 +7,12 @@
 
 <p align="center">
   <a href="https://davidkendig.info/"><img src="https://img.shields.io/badge/%F0%9F%8C%90_davidkendig.info-000000?style=for-the-badge" alt="Website" /></a>
+   <a href="https://www.linkedin.com/in/david-kendig"><img src="https://custom-icon-badges.demolab.com/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin-white&logoColor=fff" alt="LinkedIn" /></a>
   <a href="https://github.com/DavidKendig"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=fff" alt="GitHub" /></a>
-  <a href="https://www.linkedin.com/in/david-kendig"><img src="https://custom-icon-badges.demolab.com/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin-white&logoColor=fff" alt="LinkedIn" /></a>
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3200&pause=900&color=0A66C2&center=true&vCenter=true&multiline=true&repeat=true&width=680&height=130&lines=Coder+%C2%B7+Tinkerer+%C2%B7+Game+Master;Self+hosted+tools+and+tabletop+tech;If+I+need+it%2C+I+build+it" alt="What I do" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3200&pause=900&color=0A66C2&center=true&vCenter=true&multiline=true&repeat=true&width=680&height=130&lines=Coder+%C2%B7+Tinkerer+%C2%B7+Game+Master;Cool+tools+&amp;+cool+tech;If+I+need+it%2C+I+build+it" alt="What I do" />
 </p>
 
 ## 👋 Hi there, I'm David Kendig
@@ -69,7 +69,7 @@ runs_on   :  Caffeine + curiosity ☕
 
 | Project | Features |  |
 | --- | --- | --- |
-| [Aethernia Fantasy RPG Campaign](https://github.com/DavidKendig/AetherniaFantasyRPGCampaign) | A semi, system agnostic RPG setting | [![Markdown](https://img.shields.io/badge/Markdown-000000?logo=markdown&logoColor=fff)](#) |
+| [Aethernia Fantasy RPG Campaign](https://github.com/DavidKendig/AetherniaFantasyRPGCampaign) | A semi, system agnostic, fantasy RPG setting | [![Markdown](https://img.shields.io/badge/Markdown-000000?logo=markdown&logoColor=fff)](#) |
 | [DavidKendig.info](https://github.com/DavidKendig/DavidKendig.info) | My personal website | [![CSS](https://img.shields.io/badge/CSS-639?logo=css&logoColor=fff)](#) [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000)](#) [![WordPress](https://img.shields.io/badge/WordPress-21759B?logo=wordpress&logoColor=fff)](#) |
 | [EZBattleMap](https://github.com/DavidKendig/EZBattleMap) | My original self hosted VTT for offline battlespace management | [![Java](https://img.shields.io/badge/Java-%23ED8B00.svg?logo=openjdk&logoColor=white)](#) |
 | [EzVTT](https://github.com/DavidKendig/EzVTT) | Easy to use VTT that you can depoy to a VPS | [![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)](#) [![Java](https://img.shields.io/badge/Java-%23ED8B00.svg?logo=openjdk&logoColor=white)](#) [![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff)](#) |
